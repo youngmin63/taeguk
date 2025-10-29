@@ -32,7 +32,7 @@ export default function Contacts({ onNavigate }: ContactsProps) {
 
         {/* Navigation */}
         <nav className="mb-16 flex justify-center">
-          <ul className="flex justify-between text-[#fef9ec] text-xl md:text-2xl font-['Cormorant_Upright'] font-semibold w-[808px]">
+          <ul className="flex flex-wrap justify-center gap-4 text-[#fef9ec] text-xl md:text-2xl font-['Cormorant_Upright'] font-semibold w-full max-w-[808px]">
             <li>
               <button
                 onClick={() => onNavigate?.('about')}
@@ -72,7 +72,7 @@ export default function Contacts({ onNavigate }: ContactsProps) {
       {/* Main Content Section */}
       <section className="bg-[#fef9ec] w-full py-20">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex items-start justify-between gap-12">
+          <div className="flex flex-col md:flex-row items-start justify-between gap-12">
             {/* Left: Text and Form Section */}
             <div className="flex-1">
               <h2 className={`text-[#3f4026] text-6xl md:text-7xl lg:text-7xl ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold leading-tight mb-8`}>
@@ -85,7 +85,7 @@ export default function Contacts({ onNavigate }: ContactsProps) {
               </div>
 
               {/* Contact Form */}
-              <div className="space-y-8 w-[438px]">
+              <div className="space-y-8 w-full max-w-[438px]">
                 {/* Name Field */}
                 <div className="space-y-2">
                   <label className={`text-[#3f4026] text-xl ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold`}>
@@ -130,8 +130,8 @@ export default function Contacts({ onNavigate }: ContactsProps) {
             </div>
 
             {/* Right: Image Section */}
-            <div className="flex-1 flex justify-end">
-              <div className="w-[516px] h-[775px] bg-white">
+            <div className="flex-1 flex justify-end w-full">
+              <div className="w-full max-w-[516px] bg-white aspect-[2/3]">
                 <img src={imgContactsImage} alt="Contact Image" className="w-full h-full object-cover" />
               </div>
             </div>

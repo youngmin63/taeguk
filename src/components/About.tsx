@@ -28,7 +28,7 @@ export default function About({ onNavigate }: AboutProps) {
         
         {/* Navigation */}
         <nav className="mb-16 flex justify-center">
-          <ul className="flex justify-between text-[#fef9ec] text-xl md:text-2xl font-['Cormorant_Upright'] font-semibold w-[808px]">
+          <ul className="flex flex-wrap justify-center gap-4 text-[#fef9ec] text-xl md:text-2xl font-['Cormorant_Upright'] font-semibold w-full max-w-[808px]">
             <li>
               <button 
                 onClick={() => onNavigate?.('about')} 
@@ -69,9 +69,9 @@ export default function About({ onNavigate }: AboutProps) {
       <section className="bg-[#3f4026] min-h-screen flex flex-col items-center justify-center pb-20">
 
         {/* Main Content Section */}
-        <div className="bg-[#fef9ec] w-full min-h-[560px] md:min-h-[720px] lg:min-h-[887px] py-20 overflow-hidden">
+        <div className="bg-[#fef9ec] w-full min-h-[560px] md:min-h-[720px] lg:min-h-[887px] py-20 overflow-visible">
           <div className="max-w-6xl mx-auto px-4">
-            <div className="flex items-center justify-between gap-4">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-8">
               {/* Left: Text Section */}
               <div className="flex-1">
                 <h2 className="text-[#3f4026] text-6xl md:text-7xl lg:text-8xl font-['Cormorant_Upright'] font-semibold leading-tight">
@@ -82,8 +82,8 @@ export default function About({ onNavigate }: AboutProps) {
               </div>
               
               {/* Right: Image Section */}
-              <div className="flex-1 flex justify-end">
-                <div className="w-[528px] h-[660px]">
+              <div className="flex-1 flex justify-end w-full">
+                <div className="w-full max-w-[528px] aspect-[4/5]">
                   <img src={imgFaceTaeguk} alt="About Taeguk" className="w-full h-full object-cover rounded-lg" />
                 </div>
               </div>
@@ -93,7 +93,7 @@ export default function About({ onNavigate }: AboutProps) {
       </section>
 
       {/* 소개 텍스트 섹션 */}
-      <div className="bg-[#3f4026] min-h-[1080px] px-4 py-20">
+      <div className="bg-[#3f4026] min-h-0 md:min-h-[1080px] px-4 py-20">
         <div className="max-w-6xl mx-auto">
           <p className={`text-[#fef9ec] text-[48px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-left mb-16 `}>
             {t('about.greeting')}
@@ -115,18 +115,18 @@ export default function About({ onNavigate }: AboutProps) {
       </div>
 
       {/* 팀 섹션 */}
-      <div className="bg-[#fef9ec] min-h-[1080px] px-4 py-20">
+      <div className="bg-[#fef9ec] min-h-0 md:min-h-[1080px] px-4 py-20">
         <div className="max-w-6xl mx-auto">
           <p className={`text-[#3f4026] text-[48px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-center mb-16`}>
             {t('about.team.title')}
           </p>
           
-          <div className="flex gap-[40px] items-start justify-center mb-16">
-            <div className="h-[524px] w-[643px]">
+          <div className="flex flex-col lg:flex-row gap-[40px] items-start justify-center mb-16">
+            <div className="w-full max-w-[643px] aspect-[643/524]">
               <img alt="Team working" className="w-full h-full object-cover" src={imgTeamFirst} />
             </div>
-            <div className="flex flex-col gap-[24px] w-[340px]">
-              <div className="h-[284px] w-[340px]">
+            <div className="flex flex-col gap-[24px] w-full max-w-[340px]">
+              <div className="w-full aspect-[340/284]">
                 <img alt="Team with dog" className="w-full h-full object-cover" src={imgTeamSecond} />
               </div>
               <div className={`text-[#3f4026] text-[24px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorapxnt_Upright']"} font-semibold`}>
@@ -136,26 +136,26 @@ export default function About({ onNavigate }: AboutProps) {
           </div>
           
           {/* 통계 섹션 */}
-          <div className="flex gap-px items-center justify-center">
-            <div className="border-[#3f4026] border-r border-solid flex flex-col gap-[16px] items-center w-[450px] py-8">
+          <div className="flex flex-wrap items-stretch justify-center">
+            <div className="border-[#3f4026] border-r border-solid flex flex-col gap-[16px] items-center w-full sm:w-1/2 lg:w-1/4 py-8">
               <p className={`text-[#3f4026] text-[96px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold px-20`}>100%</p>
               <p className={`text-[#3f4026] text-[16px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-center px-0`}>
                 {t('about.stats.grown')}
               </p>
             </div>
-            <div className="border-[#3f4026] border-r border-solid flex flex-col gap-[16px] items-center w-[450px] py-8 ">
+            <div className="border-[#3f4026] border-r border-solid flex flex-col gap-[16px] items-center w-full sm:w-1/2 lg:w-1/4 py-8 ">
               <p className={`text-[#3f4026] text-[96px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold px-20`} >50+</p>
               <p className={`text-[#3f4026] text-[16px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-center px-0`}>
                 {t('about.stats.available')}
               </p>
             </div>
-            <div className="border-[#3f4026] border-r border-solid flex flex-col gap-[16px] items-center w-[450px] py-8 ">
+            <div className="border-[#3f4026] border-r border-solid flex flex-col gap-[16px] items-center w-full sm:w-1/2 lg:w-1/4 py-8 ">
               <p className={`text-[#3f4026] text-[96px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold px-20`}>500+</p>
               <p className={`text-[#3f4026] text-[16px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-center px-0`}>
                 {t('about.stats.styled')}
               </p>
             </div>
-            <div className="flex flex-col gap-[16px] items-center w-[450px] py-8 ">
+            <div className="flex flex-col gap-[16px] items-center w-full sm:w-1/2 lg:w-1/4 py-8 ">
               <p className={`text-[#3f4026] text-[96px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold px-20`}>90%</p>
               <p className={`text-[#3f4026] text-[16px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-center px-0`}>
                 {t('about.stats.return')}
@@ -166,7 +166,7 @@ export default function About({ onNavigate }: AboutProps) {
       </div>
 
       {/* 철학 섹션 */}
-      <div className="bg-[#3f4026] min-h-[1080px] flex items-center justify-center px-4 py-20">
+      <div className="bg-[#3f4026] min-h-0 md:min-h-[1080px] flex items-center justify-center px-4 py-20">
         <div className="max-w-4xl mx-auto text-center">
           <p className={`text-[#fef9ec] text-[96px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-16`}>
             {t('about.philosophy.title')}

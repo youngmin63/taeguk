@@ -34,7 +34,7 @@ export default function Home({ onNavigate }: HomeProps) {
 
         {/* Navigation */}
         <nav className="mb-16 flex justify-center">
-          <ul className="flex justify-between text-[#fef9ec] text-xl md:text-2xl font-['Cormorant_Upright'] font-semibold w-[808px]">
+          <ul className="flex flex-wrap justify-center gap-4 text-[#fef9ec] text-xl md:text-2xl font-['Cormorant_Upright'] font-semibold w-full max-w-[808px]">
             <li>
               <button 
                 onClick={() => onNavigate?.('about')} 
@@ -75,7 +75,7 @@ export default function Home({ onNavigate }: HomeProps) {
       <section className="bg-[#3f4026] flex flex-col items-center justify-center px-4 ">
 
         {/* Hero Image */}
-        <div className="w-[1335px] h-[771px] mx-auto">
+        <div className="w-full max-w-[1335px] mx-auto aspect-[16/9]">
           <img src="/assets/main background.png" alt="Taeguk Interior" className="w-full h-full object-cover rounded-lg" />
         </div>
       </section>
@@ -90,7 +90,7 @@ export default function Home({ onNavigate }: HomeProps) {
 
           {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-            <div className="flex flex-col items-center text-center p-6 min-h-[200px] min-w-[250px]">
+            <div className="flex flex-col items-center text-center p-6 min-h-[200px] min-w-0">
               <div className="w-8 h-8 mb-4">
                 <img src={imgRose} alt="Rose" className="w-full h-full" />
               </div>
@@ -102,7 +102,7 @@ export default function Home({ onNavigate }: HomeProps) {
               </p>
             </div>
             
-            <div className="flex flex-col items-center text-center p-6 min-h-[200px] min-w-[250px]">
+            <div className="flex flex-col items-center text-center p-6 min-h-[200px] min-w-0">
               <div className="w-8 h-8 mb-4">
                 <img src={imgLeaf} alt="Leaf" className="w-full h-full" />
               </div>
@@ -114,7 +114,7 @@ export default function Home({ onNavigate }: HomeProps) {
               </p>
             </div>
             
-            <div className="flex flex-col items-center text-center p-6 min-h-[200px] min-w-[250px]">
+            <div className="flex flex-col items-center text-center p-6 min-h-[200px] min-w-0">
               <div className="w-8 h-8 mb-4">
                 <img src={imgTree} alt="Tree" className="w-full h-full" />
               </div>
@@ -126,7 +126,7 @@ export default function Home({ onNavigate }: HomeProps) {
               </p>
             </div>
             
-            <div className="flex flex-col items-center text-center p-6 min-h-[200px] min-w-[250px]">
+            <div className="flex flex-col items-center text-center p-6 min-h-[200px] min-w-0">
               <div className="w-8 h-8 mb-4">
                 <img src={imgBasket} alt="Basket" className="w-full h-full" />
               </div>
@@ -138,7 +138,7 @@ export default function Home({ onNavigate }: HomeProps) {
               </p>
             </div>
             
-            <div className="flex flex-col items-center text-center p-6 min-h-[200px] min-w-[250px]">
+            <div className="flex flex-col items-center text-center p-6 min-h-[200px] min-w-0">
               <div className="w-8 h-8 mb-4">
                 <img src="/assets/Chat Bubble.png" alt="Consulting" className="w-full h-full" />
               </div>
@@ -163,7 +163,7 @@ export default function Home({ onNavigate }: HomeProps) {
       </section>
 
       {/* Project Section */}
-      <section className="relative h-screen flex items-end justify-center pb-16">
+      <section className="relative h-[60vh] md:h-screen flex items-end justify-center pb-16">
         <img src="/assets/project1.png" alt="Project Background" className="absolute inset-0 w-full h-full object-cover" />
         <div className="relative z-10 text-center text-white">
           <h2 className={`text-4xl md:text-2xl ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-4`}>
@@ -182,10 +182,10 @@ export default function Home({ onNavigate }: HomeProps) {
             {t('home.story.title')}
           </h2>
           
-          <div className="flex justify-center gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {/* Story 1 */}
             <div className="flex flex-col gap-6">
-              <div className="w-[304px] h-[304px]">
+              <div className="w-40 h-40 sm:w-[304px] sm:h-[304px]">
                 <img src={imgStory1} alt="Nandina Planting for Garden Privacy" className="w-full h-full object-cover rounded-lg" />
               </div>
               <div className="px-5">
@@ -201,7 +201,7 @@ export default function Home({ onNavigate }: HomeProps) {
 
             {/* Story 2 */}
             <div className="flex flex-col gap-6">
-              <div className="w-[304px] h-[304px]">
+              <div className="w-40 h-40 sm:w-[304px] sm:h-[304px]">
                 <img src={imgStory2} alt="Kindergarten Garden Bed & Pruning" className="w-full h-full object-cover rounded-lg" />
               </div>
               <div className="px-5">
@@ -217,7 +217,7 @@ export default function Home({ onNavigate }: HomeProps) {
 
             {/* Story 3 */}
             <div className="flex flex-col gap-6">
-              <div className="w-[304px] h-[304px]">
+              <div className="w-40 h-40 sm:w-[304px] sm:h-[304px]">
                 <img src={imgStory3} alt="Nandina Privacy Screen Installation" className="w-full h-full object-cover rounded-lg" />
               </div>
               <div className="px-5">
@@ -233,7 +233,7 @@ export default function Home({ onNavigate }: HomeProps) {
 
             {/* Story 4 */}
             <div className="flex flex-col gap-6">
-              <div className="w-[304px] h-[304px]">
+              <div className="w-40 h-40 sm:w-[304px] sm:h-[304px]">
                 <img src={imgStory4} alt="Garden Privacy Screening & Renewal" className="w-full h-full object-cover rounded-lg" />
               </div>
               <div className="px-5">
@@ -284,14 +284,14 @@ export default function Home({ onNavigate }: HomeProps) {
             {t('home.reviews.title')}
           </h2>
           
-          <div className="w-[865px] h-[943px] mx-auto">
+          <div className="w-full max-w-[865px] mx-auto">
             <div className="flex flex-col lg:flex-row items-center gap-8">
               <div className="flex-1">
                 <div className={`text-[#3f4026] text-base md:text-lg ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} leading-relaxed`}>
                   <p className="mb-4">{t('home.reviews.review1')}</p>
                 </div>
               </div>
-              <div className="w-[384px] h-[492px]">
+              <div className="w-full max-w-[384px] aspect-[384/492]">
                 <img src="/assets/review image1.png" alt="Review Image 1" className="w-full h-full object-cover rounded-lg" />
               </div>
             </div>
@@ -302,7 +302,7 @@ export default function Home({ onNavigate }: HomeProps) {
                   <p className="mb-4">{t('home.reviews.review2')}</p>
                 </div>
               </div>
-              <div className="w-[384px] h-[492px]">
+              <div className="w-full max-w-[384px] aspect-[384/492]">
                 <img src="/assets/review image2.png" alt="Review Image 2" className="w-full h-full object-cover rounded-lg" />
               </div>
             </div>

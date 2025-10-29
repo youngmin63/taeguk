@@ -51,7 +51,7 @@ export default function Stories({ onNavigate }: StoriesProps) {
 
         {/* Navigation */}
         <nav className="mb-16 flex justify-center">
-          <ul className="flex justify-between text-[#fef9ec] text-xl md:text-2xl font-['Cormorant_Upright'] font-semibold w-[808px]">
+          <ul className="flex flex-wrap justify-center gap-4 text-[#fef9ec] text-xl md:text-2xl font-['Cormorant_Upright'] font-semibold w-full max-w-[808px]">
             <li>
               <button
                 onClick={() => onNavigate?.('about')}
