@@ -183,45 +183,13 @@ export default function Home({ onNavigate }: HomeProps) {
           </h2>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Story 1 */}
-            <div className="flex flex-col gap-6">
-              <div className="w-full aspect-square max-w-[304px] mx-auto">
-                <img src={imgStory1} alt="Nandina Planting for Garden Privacy" className="w-full h-full object-cover rounded-lg" />
-              </div>
-              <div className="text-center">
-                <h3 className={`text-[#3f4026] text-base ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-2`}>
-                  {t('stories.story1.title')}
-                </h3>
-                <div className={`text-[rgba(63,64,38,0.7)] text-xs ${language === 'ko' ? 'font-notoSansKr' : ''}`}>
-                  <p className="mb-1">{t('stories.story1.type')}</p>
-                  <p>{t('stories.story1.services')}</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Story 2 */}
-            <div className="flex flex-col gap-6">
-              <div className="w-full aspect-square max-w-[304px] mx-auto">
-                <img src={imgStory2} alt="Kindergarten Garden Bed & Pruning" className="w-full h-full object-cover rounded-lg" />
-              </div>
-              <div className="text-center">
-                <h3 className={`text-[#3f4026] text-base ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-2`}>
-                  {t('stories.story2.title')}
-                </h3>
-                <div className={`text-[rgba(63,64,38,0.7)] text-xs ${language === 'ko' ? 'font-notoSansKr' : ''}`}>
-                  <p className="mb-1">{t('stories.story2.type')}</p>
-                  <p>{t('stories.story2.services')}</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Story 3 */}
-            <div className="flex flex-col gap-6">
+            {/* Story 1 (was 3) */}
+            <a href="https://blog.naver.com/eunsuk7225/224006405168" target="_blank" rel="noopener noreferrer" className="flex flex-col gap-6 cursor-pointer hover:opacity-80 transition-opacity">
               <div className="w-full aspect-square max-w-[304px] mx-auto">
                 <img src={imgStory3} alt="Nandina Privacy Screen Installation" className="w-full h-full object-cover rounded-lg" />
               </div>
               <div className="text-center">
-                <h3 className={`text-[#3f4026] text-base ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-2`}>
+                <h3 className={`text-[#3f4026] text-base ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-2 px-8`}>
                   {t('stories.story3.title')}
                 </h3>
                 <div className={`text-[rgba(63,64,38,0.7)] text-xs ${language === 'ko' ? 'font-notoSansKr' : ''}`}>
@@ -229,15 +197,47 @@ export default function Home({ onNavigate }: HomeProps) {
                   <p>{t('stories.story3.services')}</p>
                 </div>
               </div>
-            </div>
+            </a>
+
+            {/* Story 2 */}
+            <a href="https://blog.naver.com/eunsuk7225/224006419000" target="_blank" rel="noopener noreferrer" className="flex flex-col gap-6 cursor-pointer hover:opacity-80 transition-opacity">
+              <div className="w-full aspect-square max-w-[304px] mx-auto">
+                <img src={imgStory2} alt="Kindergarten Garden Bed & Pruning" className="w-full h-full object-cover rounded-lg" />
+              </div>
+              <div className="text-center">
+                <h3 className={`text-[#3f4026] text-base ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-2 px-8`}>
+                  {t('stories.story2.title')}
+                </h3>
+                <div className={`text-[rgba(63,64,38,0.7)] text-xs ${language === 'ko' ? 'font-notoSansKr' : ''}`}>
+                  <p className="mb-1">{t('stories.story2.type')}</p>
+                  <p>{t('stories.story2.services')}</p>
+                </div>
+              </div>
+            </a>
+
+            {/* Story 3 (was 1) */}
+            <a href="https://blog.naver.com/eunsuk7225/224006405168" target="_blank" rel="noopener noreferrer" className="flex flex-col gap-6 cursor-pointer hover:opacity-80 transition-opacity">
+              <div className="w-full aspect-square max-w-[304px] mx-auto">
+                <img src={imgStory1} alt="Nandina Planting for Garden Privacy" className="w-full h-full object-cover rounded-lg" />
+              </div>
+              <div className="text-center">
+                <h3 className={`text-[#3f4026] text-base ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-2 px-8`}>
+                  {t('stories.story1.title')}
+                </h3>
+                <div className={`text-[rgba(63,64,38,0.7)] text-xs ${language === 'ko' ? 'font-notoSansKr' : ''}`}>
+                  <p className="mb-1">{t('stories.story1.type')}</p>
+                  <p>{t('stories.story1.services')}</p>
+                </div>
+              </div>
+            </a>
 
             {/* Story 4 */}
-            <div className="flex flex-col gap-6">
+            <a href="https://blog.naver.com/eunsuk7225/224005560800" target="_blank" rel="noopener noreferrer" className="flex flex-col gap-6 cursor-pointer hover:opacity-80 transition-opacity">
               <div className="w-full aspect-square max-w-[304px] mx-auto">
                 <img src={imgStory4} alt="Garden Privacy Screening & Renewal" className="w-full h-full object-cover rounded-lg" />
               </div>
               <div className="text-center">
-                <h3 className={`text-[#3f4026] text-base ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-2`}>
+                <h3 className={`text-[#3f4026] text-base ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-2 px-8`}>
                   {t('stories.story4.title')}
                 </h3>
                 <div className={`text-[rgba(63,64,38,0.7)] text-xs ${language === 'ko' ? 'font-notoSansKr' : ''}`}>
@@ -245,7 +245,7 @@ export default function Home({ onNavigate }: HomeProps) {
                   <p>{t('stories.story4.services')}</p>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -327,30 +327,30 @@ export default function Home({ onNavigate }: HomeProps) {
               
               {/* Right: Instagram Images Grid */}
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-2 gap-y-2 sm:gap-x-3 sm:gap-y-3 lg:gap-x-4 lg:gap-y-4 w-full lg:max-w-[647px] mx-auto justify-items-center">
-                <div className="relative w-full aspect-square max-w-[205px]">
+                <a href="https://www.instagram.com/oksuri398/" target="_blank" rel="noopener noreferrer" className="relative w-full aspect-square max-w-[205px] cursor-pointer">
                   <img src="/assets/instaImage1.png" alt="Instagram 1" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
                   <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
-                </div>
-                <div className="relative w-full aspect-square max-w-[205px]">
+                </a>
+                <a href="https://www.instagram.com/oksuri398/" target="_blank" rel="noopener noreferrer" className="relative w-full aspect-square max-w-[205px] cursor-pointer">
                   <img src="/assets/instaImage2.png" alt="Instagram 2" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
                   <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
-                </div>
-                <div className="relative w-full aspect-square max-w-[205px]">
+                </a>
+                <a href="https://www.instagram.com/oksuri398/" target="_blank" rel="noopener noreferrer" className="relative w-full aspect-square max-w-[205px] cursor-pointer">
                   <img src="/assets/instaImage3.png" alt="Instagram 3" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
                   <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
-                </div>
-                <div className="relative w-full aspect-square max-w-[205px]">
+                </a>
+                <a href="https://www.instagram.com/oksuri398/" target="_blank" rel="noopener noreferrer" className="relative w-full aspect-square max-w-[205px] cursor-pointer">
                   <img src="/assets/instaImage4.png" alt="Instagram 4" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
                   <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
-                </div>
-                <div className="relative w-full aspect-square max-w-[205px]">
+                </a>
+                <a href="https://www.instagram.com/oksuri398/" target="_blank" rel="noopener noreferrer" className="relative w-full aspect-square max-w-[205px] cursor-pointer">
                   <img src="/assets/instaImage5.png" alt="Instagram 5" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
                   <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
-                </div>
-                <div className="relative w-full aspect-square max-w-[205px]">
+                </a>
+                <a href="https://www.instagram.com/oksuri398/" target="_blank" rel="noopener noreferrer" className="relative w-full aspect-square max-w-[205px] cursor-pointer">
                   <img src="/assets/instaImage6.png" alt="Instagram 6" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
                   <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
-                </div>
+                </a>
               </div>
             </div>
           </div>

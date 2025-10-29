@@ -138,25 +138,25 @@ export default function About({ onNavigate }: AboutProps) {
           {/* 통계 섹션 */}
           <div className="flex flex-wrap items-stretch justify-center">
             <div className="border-[#3f4026] border-r border-solid flex flex-col gap-[16px] items-center w-full sm:w-1/2 lg:w-1/4 py-8">
-              <p className={`text-[#3f4026] text-[96px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold px-20`}>100%</p>
+              <p className={`text-[#3f4026] text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold px-20`}>100%</p>
               <p className={`text-[#3f4026] text-[16px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-center px-0`}>
                 {t('about.stats.grown')}
               </p>
             </div>
             <div className="border-[#3f4026] border-r border-solid flex flex-col gap-[16px] items-center w-full sm:w-1/2 lg:w-1/4 py-8 ">
-              <p className={`text-[#3f4026] text-[96px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold px-20`} >50+</p>
+              <p className={`text-[#3f4026] text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold px-20`} >50+</p>
               <p className={`text-[#3f4026] text-[16px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-center px-0`}>
                 {t('about.stats.available')}
               </p>
             </div>
             <div className="border-[#3f4026] border-r border-solid flex flex-col gap-[16px] items-center w-full sm:w-1/2 lg:w-1/4 py-8 ">
-              <p className={`text-[#3f4026] text-[96px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold px-20`}>500+</p>
+              <p className={`text-[#3f4026] text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold px-20`}>500+</p>
               <p className={`text-[#3f4026] text-[16px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-center px-0`}>
                 {t('about.stats.styled')}
               </p>
             </div>
             <div className="flex flex-col gap-[16px] items-center w-full sm:w-1/2 lg:w-1/4 py-8 ">
-              <p className={`text-[#3f4026] text-[96px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold px-20`}>90%</p>
+              <p className={`text-[#3f4026] text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold px-20`}>90%</p>
               <p className={`text-[#3f4026] text-[16px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-center px-0`}>
                 {t('about.stats.return')}
               </p>
@@ -196,30 +196,30 @@ export default function About({ onNavigate }: AboutProps) {
               
               {/* Right: Instagram Images Grid */}
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-2 gap-y-2 sm:gap-x-3 sm:gap-y-3 lg:gap-x-4 lg:gap-y-4 w-full lg:max-w-[647px] mx-auto justify-items-center">
-                <div className="relative w-full aspect-square max-w-[205px]">
+                <a href="https://www.instagram.com/oksuri398/" target="_blank" rel="noopener noreferrer" className="relative w-full aspect-square max-w-[205px] cursor-pointer">
                   <img src="/assets/instaImage1.png" alt="Instagram 1" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
                   <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
-                </div>
-                <div className="relative w-full aspect-square max-w-[205px]">
+                </a>
+                <a href="https://www.instagram.com/oksuri398/" target="_blank" rel="noopener noreferrer" className="relative w-full aspect-square max-w-[205px] cursor-pointer">
                   <img src="/assets/instaImage2.png" alt="Instagram 2" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
                   <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
-                </div>
-                <div className="relative w-full aspect-square max-w-[205px]">
+                </a>
+                <a href="https://www.instagram.com/oksuri398/" target="_blank" rel="noopener noreferrer" className="relative w-full aspect-square max-w-[205px] cursor-pointer">
                   <img src="/assets/instaImage3.png" alt="Instagram 3" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
                   <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
-                </div>
-                <div className="relative w-full aspect-square max-w-[205px]">
+                </a>
+                <a href="https://www.instagram.com/oksuri398/" target="_blank" rel="noopener noreferrer" className="relative w-full aspect-square max-w-[205px] cursor-pointer">
                   <img src="/assets/instaImage4.png" alt="Instagram 4" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
                   <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
-                </div>
-                <div className="relative w-full aspect-square max-w-[205px]">
+                </a>
+                <a href="https://www.instagram.com/oksuri398/" target="_blank" rel="noopener noreferrer" className="relative w-full aspect-square max-w-[205px] cursor-pointer">
                   <img src="/assets/instaImage5.png" alt="Instagram 5" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
                   <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
-                </div>
-                <div className="relative w-full aspect-square max-w-[205px]">
+                </a>
+                <a href="https://www.instagram.com/oksuri398/" target="_blank" rel="noopener noreferrer" className="relative w-full aspect-square max-w-[205px] cursor-pointer">
                   <img src="/assets/instaImage6.png" alt="Instagram 6" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
                   <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
-                </div>
+                </a>
               </div>
             </div>
           </div>
