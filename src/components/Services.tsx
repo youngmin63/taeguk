@@ -70,11 +70,10 @@ export default function Services({ onNavigate }: ServicesProps) {
       <section className="bg-[#3f4026]">
 
         {/* Main Title */}
-        <div className="w-full min-h-[280px] md:h-[487px] bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/assets/service background pic.jpg')"}}>
-          <div className="max-w-6xl mx-auto px-4 h-full">
-            <div className="flex items-center justify-center gap-4 h-full">
-             
-              <div className="flex justify-center items-center w-full max-w-[980px] px-6 py-6 md:px-[64px] md:py-[32px] bg-[#FEF9EC]">
+        <div className="w-full h-[320px] md:h-[487px] bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: "url('/assets/service background pic.jpg')"}}>
+          <div className="max-w-6xl mx-auto px-4 h-full relative">
+            <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-center">
+              <div className="flex justify-center items-center w-full max-w-[980px] px-6 py-8 md:px-[64px] md:py-[32px] bg-[#FEF9EC]">
                 <h1 className={`text-[#3f4026] text-3xl md:text-6xl lg:text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold leading-normal text-center`}>
                   {t('services.title')}
                 </h1>
@@ -87,9 +86,9 @@ export default function Services({ onNavigate }: ServicesProps) {
       {/* Space Styling Section */}
       <section className="bg-[#3f4026] py-20">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-start gap-8">
+          <div className="flex flex-col md:flex-row items-start gap-24">
             {/* Left: Image and Description */}
-            <div className="flex-1">
+            <div className="flex-1 order-2 md:order-1">
               <div className="w-full max-w-[643px] aspect-[643/478] ">
                 <img src={imgServiceSpace} alt="Space Styling" className="w-full h-full object-cover rounded-lg" />
               </div>
@@ -104,15 +103,9 @@ export default function Services({ onNavigate }: ServicesProps) {
             </div>
             
             {/* Right: Title */}
-            <div className="flex-1">
-              <h2 className={`text-[#fef9ec] text-4xl md:text-6xl lg:text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-bold uppercase leading-tight`}>
-                {language === 'ko' ? (
-                  <>
-                    공간<br />스타일링
-                  </>
-                ) : (
-                  t('services.space.title')
-                )}
+            <div className="flex-1 order-1 md:order-2">
+              <h2 className={`text-[#fef9ec] text-4xl md:text-6xl lg:text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-bold uppercase leading-tight mt-8 md:mt-8`}>
+                {t('services.space.title')}
               </h2>
             </div>
           </div>
@@ -122,10 +115,10 @@ export default function Services({ onNavigate }: ServicesProps) {
       {/* Flowers & Plants Section */}
       <section className="bg-[#3f4026] py-20">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-start gap-8">
+          <div className="flex flex-col md:flex-row items-start gap-24">
             {/* Left: Title */}
             <div className="flex-1">
-              <h2 className={`text-[#fef9ec] text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-bold uppercase leading-tight`}>
+              <h2 className={`text-[#fef9ec] text-4xl md:text-6xl lg:text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-bold uppercase leading-tight mt-8 md:mt-8 text-right`}>
                 {t('services.flowers.title')}
               </h2>
             </div>
@@ -155,7 +148,7 @@ export default function Services({ onNavigate }: ServicesProps) {
           <div className="flex flex-col gap-8">
             {/* Top: Title */}
             <div className="flex justify-center">
-              <h2 className={`text-[#fef9ec] text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-bold uppercase leading-tight mb-8 text-center`}>
+              <h2 className={`text-[#fef9ec] text-4xl md:text-6xl lg:text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-bold uppercase leading-tight mb-8 text-center`}>
                 {t('services.events.title')}
               </h2>
             </div>
@@ -200,30 +193,30 @@ export default function Services({ onNavigate }: ServicesProps) {
               </div>
               
               {/* Right: Instagram Images Grid */}
-              <div className="grid grid-cols-3 gap-4 w-full lg:w-auto">
-                <div className="w-[205px] h-[205px] relative">
-                  <img src="/assets/instaImage1.png" alt="Instagram 1" className="w-full h-full object-cover rounded-lg" />
-                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-4 right-4 w-6 h-6" />
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-2 gap-y-2 sm:gap-x-3 sm:gap-y-3 lg:gap-x-4 lg:gap-y-4 w-full lg:max-w-[647px] mx-auto justify-items-center">
+                <div className="relative w-full aspect-square max-w-[205px]">
+                  <img src="/assets/instaImage1.png" alt="Instagram 1" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
                 </div>
-                <div className="w-[205px] h-[205px] relative">
-                  <img src="/assets/instaImage2.png" alt="Instagram 2" className="w-full h-full object-cover rounded-lg" />
-                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-4 right-4 w-6 h-6" />
+                <div className="relative w-full aspect-square max-w-[205px]">
+                  <img src="/assets/instaImage2.png" alt="Instagram 2" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
                 </div>
-                <div className="w-[205px] h-[205px] relative">
-                  <img src="/assets/instaImage3.png" alt="Instagram 3" className="w-full h-full object-cover rounded-lg" />
-                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-4 right-4 w-6 h-6" />
+                <div className="relative w-full aspect-square max-w-[205px]">
+                  <img src="/assets/instaImage3.png" alt="Instagram 3" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
                 </div>
-                <div className="w-[205px] h-[205px] relative">
-                  <img src="/assets/instaImage4.png" alt="Instagram 4" className="w-full h-full object-cover rounded-lg" />
-                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-4 right-4 w-6 h-6" />
+                <div className="relative w-full aspect-square max-w-[205px]">
+                  <img src="/assets/instaImage4.png" alt="Instagram 4" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
                 </div>
-                <div className="w-[205px] h-[205px] relative">
-                  <img src="/assets/instaImage5.png" alt="Instagram 5" className="w-full h-full object-cover rounded-lg" />
-                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-4 right-4 w-6 h-6" />
+                <div className="relative w-full aspect-square max-w-[205px]">
+                  <img src="/assets/instaImage5.png" alt="Instagram 5" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
                 </div>
-                <div className="w-[205px] h-[205px] relative">
-                  <img src="/assets/instaImage6.png" alt="Instagram 6" className="w-full h-full object-cover rounded-lg" />
-                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-4 right-4 w-6 h-6" />
+                <div className="relative w-full aspect-square max-w-[205px]">
+                  <img src="/assets/instaImage6.png" alt="Instagram 6" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
                 </div>
               </div>
             </div>

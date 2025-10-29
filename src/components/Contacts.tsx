@@ -153,30 +153,30 @@ export default function Contacts({ onNavigate }: ContactsProps) {
               </div>
 
               {/* Right: Instagram Images Grid */}
-              <div className="grid grid-cols-3 gap-4 w-full lg:w-auto">
-                <div className="w-[205px] h-[205px] relative">
-                  <img src={imgInsta1} alt="Instagram 1" className="w-full h-full object-cover rounded-lg" />
-                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-4 right-4 w-6 h-6" />
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-2 gap-y-2 sm:gap-x-3 sm:gap-y-3 lg:gap-x-4 lg:gap-y-4 w-full lg:max-w-[647px] mx-auto justify-items-center">
+                <div className="relative w-full aspect-square max-w-[205px]">
+                  <img src={imgInsta1} alt="Instagram 1" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
                 </div>
-                <div className="w-[205px] h-[205px] relative">
-                  <img src={imgInsta2} alt="Instagram 2" className="w-full h-full object-cover rounded-lg" />
-                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-4 right-4 w-6 h-6" />
+                <div className="relative w-full aspect-square max-w-[205px]">
+                  <img src={imgInsta2} alt="Instagram 2" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
                 </div>
-                <div className="w-[205px] h-[205px] relative">
-                  <img src={imgInsta3} alt="Instagram 3" className="w-full h-full object-cover rounded-lg" />
-                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-4 right-4 w-6 h-6" />
+                <div className="relative w-full aspect-square max-w-[205px]">
+                  <img src={imgInsta3} alt="Instagram 3" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
                 </div>
-                <div className="w-[205px] h-[205px] relative">
-                  <img src={imgInsta4} alt="Instagram 4" className="w-full h-full object-cover rounded-lg" />
-                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-4 right-4 w-6 h-6" />
+                <div className="relative w-full aspect-square max-w-[205px]">
+                  <img src={imgInsta4} alt="Instagram 4" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
                 </div>
-                <div className="w-[205px] h-[205px] relative">
-                  <img src={imgInsta5} alt="Instagram 5" className="w-full h-full object-cover rounded-lg" />
-                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-4 right-4 w-6 h-6" />
+                <div className="relative w-full aspect-square max-w-[205px]">
+                  <img src={imgInsta5} alt="Instagram 5" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
                 </div>
-                <div className="w-[205px] h-[205px] relative">
-                  <img src={imgInsta6} alt="Instagram 6" className="w-full h-full object-cover rounded-lg" />
-                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-4 right-4 w-6 h-6" />
+                <div className="relative w-full aspect-square max-w-[205px]">
+                  <img src={imgInsta6} alt="Instagram 6" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
                 </div>
               </div>
             </div>

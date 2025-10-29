@@ -182,13 +182,13 @@ export default function Home({ onNavigate }: HomeProps) {
             {t('home.story.title')}
           </h2>
           
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Story 1 */}
             <div className="flex flex-col gap-6">
-              <div className="w-40 h-40 sm:w-[304px] sm:h-[304px]">
+              <div className="w-full aspect-square max-w-[304px] mx-auto">
                 <img src={imgStory1} alt="Nandina Planting for Garden Privacy" className="w-full h-full object-cover rounded-lg" />
               </div>
-              <div className="px-5">
+              <div className="text-center">
                 <h3 className={`text-[#3f4026] text-base ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-2`}>
                   {t('stories.story1.title')}
                 </h3>
@@ -201,10 +201,10 @@ export default function Home({ onNavigate }: HomeProps) {
 
             {/* Story 2 */}
             <div className="flex flex-col gap-6">
-              <div className="w-40 h-40 sm:w-[304px] sm:h-[304px]">
+              <div className="w-full aspect-square max-w-[304px] mx-auto">
                 <img src={imgStory2} alt="Kindergarten Garden Bed & Pruning" className="w-full h-full object-cover rounded-lg" />
               </div>
-              <div className="px-5">
+              <div className="text-center">
                 <h3 className={`text-[#3f4026] text-base ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-2`}>
                   {t('stories.story2.title')}
                 </h3>
@@ -217,10 +217,10 @@ export default function Home({ onNavigate }: HomeProps) {
 
             {/* Story 3 */}
             <div className="flex flex-col gap-6">
-              <div className="w-40 h-40 sm:w-[304px] sm:h-[304px]">
+              <div className="w-full aspect-square max-w-[304px] mx-auto">
                 <img src={imgStory3} alt="Nandina Privacy Screen Installation" className="w-full h-full object-cover rounded-lg" />
               </div>
-              <div className="px-5">
+              <div className="text-center">
                 <h3 className={`text-[#3f4026] text-base ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-2`}>
                   {t('stories.story3.title')}
                 </h3>
@@ -233,10 +233,10 @@ export default function Home({ onNavigate }: HomeProps) {
 
             {/* Story 4 */}
             <div className="flex flex-col gap-6">
-              <div className="w-40 h-40 sm:w-[304px] sm:h-[304px]">
+              <div className="w-full aspect-square max-w-[304px] mx-auto">
                 <img src={imgStory4} alt="Garden Privacy Screening & Renewal" className="w-full h-full object-cover rounded-lg" />
               </div>
-              <div className="px-5">
+              <div className="text-center">
                 <h3 className={`text-[#3f4026] text-base ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-2`}>
                   {t('stories.story4.title')}
                 </h3>
@@ -326,30 +326,30 @@ export default function Home({ onNavigate }: HomeProps) {
               </div>
               
               {/* Right: Instagram Images Grid */}
-              <div className="grid grid-cols-3 gap-4 w-full lg:w-auto">
-                <div className="w-[205px] h-[205px] relative">
-                  <img src="/assets/instaImage1.png" alt="Instagram 1" className="w-full h-full object-cover rounded-lg" />
-                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-4 right-4 w-6 h-6" />
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-2 gap-y-2 sm:gap-x-3 sm:gap-y-3 lg:gap-x-4 lg:gap-y-4 w-full lg:max-w-[647px] mx-auto justify-items-center">
+                <div className="relative w-full aspect-square max-w-[205px]">
+                  <img src="/assets/instaImage1.png" alt="Instagram 1" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
                 </div>
-                <div className="w-[205px] h-[205px] relative">
-                  <img src="/assets/instaImage2.png" alt="Instagram 2" className="w-full h-full object-cover rounded-lg" />
-                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-4 right-4 w-6 h-6" />
+                <div className="relative w-full aspect-square max-w-[205px]">
+                  <img src="/assets/instaImage2.png" alt="Instagram 2" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
                 </div>
-                <div className="w-[205px] h-[205px] relative">
-                  <img src="/assets/instaImage3.png" alt="Instagram 3" className="w-full h-full object-cover rounded-lg" />
-                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-4 right-4 w-6 h-6" />
+                <div className="relative w-full aspect-square max-w-[205px]">
+                  <img src="/assets/instaImage3.png" alt="Instagram 3" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
                 </div>
-                <div className="w-[205px] h-[205px] relative">
-                  <img src="/assets/instaImage4.png" alt="Instagram 4" className="w-full h-full object-cover rounded-lg" />
-                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-4 right-4 w-6 h-6" />
+                <div className="relative w-full aspect-square max-w-[205px]">
+                  <img src="/assets/instaImage4.png" alt="Instagram 4" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
                 </div>
-                <div className="w-[205px] h-[205px] relative">
-                  <img src="/assets/instaImage5.png" alt="Instagram 5" className="w-full h-full object-cover rounded-lg" />
-                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-4 right-4 w-6 h-6" />
+                <div className="relative w-full aspect-square max-w-[205px]">
+                  <img src="/assets/instaImage5.png" alt="Instagram 5" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
                 </div>
-                <div className="w-[205px] h-[205px] relative">
-                  <img src="/assets/instaImage6.png" alt="Instagram 6" className="w-full h-full object-cover rounded-lg" />
-                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-4 right-4 w-6 h-6" />
+                <div className="relative w-full aspect-square max-w-[205px]">
+                  <img src="/assets/instaImage6.png" alt="Instagram 6" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
+                  <img src={imgCarouselIcon} alt="Carousel" className="absolute top-2 right-2 sm:top-3 sm:right-3 lg:top-4 lg:right-4 w-5 h-5 lg:w-6 lg:h-6" />
                 </div>
               </div>
             </div>
