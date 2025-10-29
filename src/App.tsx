@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { LanguageProvider } from './contexts/LanguageContext.tsx'
 import Home from './components/Home.tsx'
 import About from './components/About.tsx'
@@ -8,6 +8,12 @@ import Contacts from './components/Contacts.tsx'
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home')
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+    document.documentElement.scrollTop = 0
+    document.body.scrollTop = 0
+  }, [currentPage])
 
   const renderPage = () => {
     switch (currentPage) {

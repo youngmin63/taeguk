@@ -93,7 +93,7 @@ export default function Contacts({ onNavigate }: ContactsProps) {
                   </label>
                   <input
                     type="text"
-                    className={`w-full h-11 bg-white border border-[#3f4026] px-4 text-[#3f4026] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"}`}
+                    className={`w-full h-11 bg-white px-4 text-[#3f4026] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"}`}
                     placeholder=""
                   />
                 </div>
@@ -105,7 +105,7 @@ export default function Contacts({ onNavigate }: ContactsProps) {
                   </label>
                   <input
                     type="email"
-                    className={`w-full h-11 bg-white border border-[#3f4026] px-4 text-[#3f4026] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"}`}
+                    className={`w-full h-11 bg-white px-4 text-[#3f4026] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"}`}
                     placeholder=""
                   />
                 </div>
@@ -116,7 +116,7 @@ export default function Contacts({ onNavigate }: ContactsProps) {
                     {t('contacts.form.message')}
                   </label>
                   <textarea
-                    className={`w-full h-30 bg-white border border-[#3f4026] px-4 py-3 text-[#3f4026] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} resize-none`}
+                    className={`w-full h-30 bg-white px-4 py-3 text-[#3f4026] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} resize-none`}
                     placeholder=""
                     rows={4}
                   />

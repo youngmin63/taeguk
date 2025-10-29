@@ -92,7 +92,7 @@ export default function Services({ onNavigate }: ServicesProps) {
               <div className="w-full max-w-[643px] aspect-[643/478] ">
                 <img src={imgServiceSpace} alt="Space Styling" className="w-full h-full object-cover rounded-lg" />
               </div>
-              <div className="bg-[#fef9ec] border border-black p-8 w-full max-w-[632px] ml-0 md:ml-[40px] ">
+              <div className="bg-[#fef9ec] p-8 w-full max-w-[632px] ml-0 md:ml-[40px] ">
                 <div className={`text-black text-[20px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold leading-relaxed`}>
                   <p className="mb-4">{t('services.space.desc1')}</p>
                   <p className="mb-4">{t('services.space.desc2')}</p>
@@ -128,7 +128,7 @@ export default function Services({ onNavigate }: ServicesProps) {
               <div className="w-full max-w-[643px] aspect-[643/478]">
                 <img src={imgServiceFlowers} alt="Flowers and Plants" className="w-full h-full object-cover rounded-lg" />
               </div>
-              <div className="bg-[#fef9ec] border border-black p-8 w-full max-w-[632px] md:-ml-[40px]">
+              <div className="bg-[#fef9ec] p-8 w-full max-w-[632px] md:-ml-[40px]">
                 <div className={`text-black text-[20px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold leading-relaxed`}>
                   <p className="mb-4">{t('services.flowers.desc1')}</p>
                   <p className="mb-4">{t('services.flowers.desc2')}</p>
@@ -163,13 +163,11 @@ export default function Services({ onNavigate }: ServicesProps) {
             
             {/* Bottom: Centered Description */}
             <div className="flex justify-center">
-              <div className="bg-[#fef9ec] border border-black p-8 w-full max-w-[908px]">
+              <div className="bg-[#fef9ec] p-8 w-full max-w-[908px]">
                 <div className={`text-black text-[20px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold leading-relaxed`}>
                   <p className="mb-4">{t('services.events.desc1')}</p>
                   <p className="mb-4">{t('services.events.desc2')}</p>
-                  <p className="mb-4">{t('services.events.desc3')}</p>
-                  <p className="mb-4">{t('services.events.desc4')}</p>
-                  <p>{t('services.events.desc5')}</p>
+                  <p>{t('services.events.desc3')}</p>
                 </div>
               </div>
             </div>

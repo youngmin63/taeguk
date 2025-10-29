@@ -166,10 +166,10 @@ export default function Home({ onNavigate }: HomeProps) {
       <section className="relative h-[60vh] md:h-screen flex items-end justify-center pb-16">
         <img src="/assets/project1.png" alt="Project Background" className="absolute inset-0 w-full h-full object-cover" />
         <div className="relative z-10 text-center text-white">
-          <h2 className={`text-4xl md:text-2xl ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-4`}>
+          <h2 className={`text-2xl md:text-2xl ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-4`}>
             [Project]
           </h2>
-          <h3 className={`text-2xl md:text-4xl ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold`}>
+          <h3 className={`text-xl md:text-4xl ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold`}>
             Natural Garden Design
           </h3>
         </div>
@@ -285,7 +285,7 @@ export default function Home({ onNavigate }: HomeProps) {
           </h2>
           
           <div className="w-full max-w-[865px] mx-auto">
-            <div className="flex flex-col lg:flex-row items-center gap-8">
+            <div className="flex flex-col lg:flex-row items-center gap-8 mb-24 lg:mb-0">
               <div className="flex-1">
                 <div className={`text-[#3f4026] text-base md:text-lg ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} leading-relaxed`}>
                   <p className="mb-4">{t('home.reviews.review1')}</p>
@@ -320,7 +320,7 @@ export default function Home({ onNavigate }: HomeProps) {
             <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
               {/* Left: Instagram Text */}
               <div className="flex-1">
-                <h2 className="text-[#fef9ec] text-[88px] font-['Cormorant_Upright'] font-semibold leading-tight">
+                <h2 className="text-[#fef9ec] text-[48px] md:text-[88px] font-['Cormorant_Upright'] font-semibold leading-tight">
                   {t('footer.instagram')}
                 </h2>
               </div>

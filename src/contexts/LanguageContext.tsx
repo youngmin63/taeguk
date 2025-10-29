@@ -57,10 +57,8 @@ const translations = {
     'services.flowers.desc3': 'With hands-on horticulture expertise, we design green spaces that last — beautiful, healthy, alive.',
     'services.events.title': 'Events & Social Education',
     'services.events.desc1': 'We believe nature can inspire confidence and creativity.',
-    'services.events.desc2': 'From school programs for children to hands-on workshops for local communities,',
-    'services.events.desc3': 'we bring the joy of growing and creating with plants into everyday life.',
-    'services.events.desc4': 'Together, we design experiences that help people connect —',
-    'services.events.desc5': 'with nature, with each other, and with themselves.',
+    'services.events.desc2': 'From school programs for children to hands-on workshops for local communities, we bring the joy of growing and creating with plants into everyday life.',
+    'services.events.desc3': 'Together, we design experiences that help people connect — with nature, with each other, and with themselves.',
     
     // About
     'about.title': 'THE FACE BEHIND TAEGUK',
@@ -196,10 +194,8 @@ const translations = {
     'services.flowers.desc3': '전문 원예 지식과 건강한 식물 관리로, 아름답고 지속가능한 녹색 공간을 만들어드립니다.',
     'services.events.title': '이벤트 & 사회 교육',
     'services.events.desc1': '자연은 우리의 자신감과 창의력을 자라게 합니다.',
-    'services.events.desc2': '학교 프로그램, 지역 워크숍 등 다양한 활동을 통해',
-    'services.events.desc3': '식물과 함께 배우고 만드는 즐거움을 더 많은 사람들에게 전합니다.',
-    'services.events.desc4': '자연 속에서, 사람과 사람 사이에서',
-    'services.events.desc5': '가까워지는 경험을 디자인합니다.',
+    'services.events.desc2': '학교 프로그램, 지역 워크숍 등 다양한 활동을 통해 식물과 함께 배우고 만드는 즐거움을 더 많은 사람들에게 전합니다.',
+    'services.events.desc3': '자연 속에서, 사람과 사람 사이에서 가까워지는 경험을 디자인합니다.',
     
     // About
     'about.title': '태국 야생화를 꽃피우는 wayne입니다',

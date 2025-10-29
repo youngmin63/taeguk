@@ -5,7 +5,6 @@ const imgTeamSecond = "/assets/ourteamSecond.png";
 const imgCarouselIcon = "/assets/carouse.svg";
 
 import { useLanguage } from '../contexts/LanguageContext';
-import { useEffect } from 'react';
 import LanguageToggle from './LanguageToggle';
 
 interface AboutProps {
@@ -14,9 +13,6 @@ interface AboutProps {
 
 export default function About({ onNavigate }: AboutProps) {
   const { t, language } = useLanguage();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   
   return (
     <div className="relative w-full" data-name="About1">
@@ -99,16 +95,16 @@ export default function About({ onNavigate }: AboutProps) {
       {/* 소개 텍스트 섹션 */}
       <div className="bg-[#3f4026] min-h-0 md:min-h-[1080px] px-4 py-20">
         <div className="max-w-6xl mx-auto">
-          <p className={`text-[#fef9ec] text-[48px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-left mb-16 `}>
+          <p className={`text-[#fef9ec] text-[32px] md:text-[48px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-left mb-16 `}>
             {t('about.greeting')}
           </p>
           
-          <div className={`text-[#fef9ec] text-[48px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-left mb-32`}>
+          <div className={`text-[#fef9ec] text-[32px] md:text-[48px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-left mb-32`}>
             <p>{t('about.intro1')}</p>
             <p>{t('about.intro2')}</p>
           </div>
           
-          <div className={`text-[20px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-medium text-white max-w-4xl mx-auto text-left`}>
+          <div className={`text-[16px] md:text-[20px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-medium text-white max-w-4xl mx-auto text-left`}>
             <p className="mb-8">{t('about.service1')}</p>
           
             <p className="mb-8">{t('about.service2')}</p>
@@ -141,19 +137,19 @@ export default function About({ onNavigate }: AboutProps) {
           
           {/* 통계 섹션 */}
           <div className="flex flex-wrap items-stretch justify-center">
-            <div className="border-[#3f4026] border-r border-solid flex flex-col gap-[16px] items-center w-full sm:w-1/2 lg:w-1/4 py-8">
+            <div className="flex flex-col gap-[16px] items-center w-full sm:w-1/2 lg:w-1/4 py-8">
               <p className={`text-[#3f4026] text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold px-20`}>100%</p>
               <p className={`text-[#3f4026] text-[16px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-center px-0`}>
                 {t('about.stats.grown')}
               </p>
             </div>
-            <div className="border-[#3f4026] border-r border-solid flex flex-col gap-[16px] items-center w-full sm:w-1/2 lg:w-1/4 py-8 ">
+            <div className="flex flex-col gap-[16px] items-center w-full sm:w-1/2 lg:w-1/4 py-8 ">
               <p className={`text-[#3f4026] text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold px-20`} >50+</p>
               <p className={`text-[#3f4026] text-[16px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-center px-0`}>
                 {t('about.stats.available')}
               </p>
             </div>
-            <div className="border-[#3f4026] border-r border-solid flex flex-col gap-[16px] items-center w-full sm:w-1/2 lg:w-1/4 py-8 ">
+            <div className="flex flex-col gap-[16px] items-center w-full sm:w-1/2 lg:w-1/4 py-8 ">
               <p className={`text-[#3f4026] text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold px-20`}>500+</p>
               <p className={`text-[#3f4026] text-[16px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-center px-0`}>
                 {t('about.stats.styled')}
@@ -172,10 +168,10 @@ export default function About({ onNavigate }: AboutProps) {
       {/* 철학 섹션 */}
       <div className="bg-[#3f4026] min-h-0 md:min-h-[1080px] flex items-center justify-center px-4 py-20">
         <div className="max-w-4xl mx-auto text-center">
-          <p className={`text-[#fef9ec] text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-16`}>
+          <p className={`text-[#fef9ec] text-[48px] md:text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-16`}>
             {t('about.philosophy.title')}
           </p>
-          <p className={`text-[#fef9ec] text-[24px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold`}>
+          <p className={`text-[#fef9ec] text-[18px] md:text-[24px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold`}>
             {t('about.philosophy.desc1')}
             <br />
             {t('about.philosophy.desc3')}
