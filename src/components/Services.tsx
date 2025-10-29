@@ -132,9 +132,7 @@ export default function Services({ onNavigate }: ServicesProps) {
                 <div className={`text-black text-[20px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold leading-relaxed`}>
                   <p className="mb-4">{t('services.flowers.desc1')}</p>
                   <p className="mb-4">{t('services.flowers.desc2')}</p>
-                  <p className="mb-4">{t('services.flowers.desc3')}</p>
-                  <p className="mb-4">{t('services.flowers.desc4')}</p>
-                  <p>{t('services.flowers.desc5')}</p>
+                  <p>{t('services.flowers.desc3')}</p>
                 </div>
               </div>
             </div>

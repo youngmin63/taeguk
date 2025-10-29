@@ -5,6 +5,7 @@ const imgTeamSecond = "/assets/ourteamSecond.png";
 const imgCarouselIcon = "/assets/carouse.svg";
 
 import { useLanguage } from '../contexts/LanguageContext';
+import { useEffect } from 'react';
 import LanguageToggle from './LanguageToggle';
 
 interface AboutProps {
@@ -13,6 +14,9 @@ interface AboutProps {
 
 export default function About({ onNavigate }: AboutProps) {
   const { t, language } = useLanguage();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   
   return (
     <div className="relative w-full" data-name="About1">
