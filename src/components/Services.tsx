@@ -1,8 +1,8 @@
 // 이미지 상수들
-const imgServiceFlowers = "/assets/serviceFlowers.png";
+const imgServiceFlowers = "/assets/mainBackground3.png";
 const imgServiceEvents = "/assets/serviceEvents.png";
 const imgServiceEducation = "/assets/serviceEducation.png";
-const imgServiceSpace = "/assets/serviceSpace.png";
+const imgServiceSpace = "/assets/project1.png";
 const imgCarouselIcon = "/assets/carouse.svg";
 
 import { useLanguage } from '../contexts/LanguageContext';
@@ -23,7 +23,7 @@ export default function Services({ onNavigate }: ServicesProps) {
         {/* Logo */}
         <div className="mt-8 mb-8">
           <button type="button" onClick={() => onNavigate?.('home')} className="w-64 h-48 mx-auto mb-4 cursor-pointer">
-            <img src="/assets/Logo.svg" alt="Taeguk Logo" className="w-full h-full object-contain" />
+            <img src="/assets/logo2.svg" alt="Taeguk Logo" className="w-full h-full object-contain" />
           </button>
         </div>
 
@@ -234,7 +234,7 @@ export default function Services({ onNavigate }: ServicesProps) {
             </div>
             
             <div className="w-[253px] h-[179px]">
-              <img src="/assets/logo footer.svg" alt="Taeguk Logo" className="w-full h-full object-contain" />
+              <img src="/assets/logo2 footer.svg" alt="Taeguk Logo" className="w-full h-full object-contain" />
             </div>
           </div>
         </div>

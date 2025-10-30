@@ -1,5 +1,5 @@
 // 이미지 상수들
-const imgContactsImage = "/assets/contactsImage.png";
+const imgContactsImage = "/assets/contact2.jpg";
 const imgInsta1 = "/assets/instaImage1.png";
 const imgInsta2 = "/assets/instaImage2.png";
 const imgInsta3 = "/assets/instaImage3.png";
@@ -26,7 +26,7 @@ export default function Contacts({ onNavigate }: ContactsProps) {
         {/* Logo */}
         <div className="mt-8 mb-8">
           <button type="button" onClick={() => onNavigate?.('home')} className="w-64 h-48 mx-auto mb-4 cursor-pointer">
-            <img src="/assets/Logo.svg" alt="Taeguk Logo" className="w-full h-full object-contain" />
+            <img src="/assets/logo2.svg" alt="Taeguk Logo" className="w-full h-full object-contain" />
           </button>
         </div>
 
@@ -131,8 +131,8 @@ export default function Contacts({ onNavigate }: ContactsProps) {
 
             {/* Right: Image Section */}
             <div className="flex-1 flex justify-end w-full">
-              <div className="w-full max-w-[516px] bg-white aspect-[2/3]">
-                <img src={imgContactsImage} alt="Contact Image" className="w-full h-full object-cover" />
+              <div className="w-full max-w-[516px] bg-white">
+                <img src={imgContactsImage} alt="Contact Image" className="w-full h-auto object-contain" />
               </div>
             </div>
           </div>
@@ -198,7 +198,7 @@ export default function Contacts({ onNavigate }: ContactsProps) {
             </div>
 
             <div className="w-[253px] h-[179px]">
-              <img src="/assets/logo footer.svg" alt="Taeguk Logo" className="w-full h-full object-contain" />
+              <img src="/assets/logo2 footer.svg" alt="Taeguk Logo" className="w-full h-full object-contain" />
             </div>
           </div>
         </div>

@@ -45,7 +45,7 @@ export default function Stories({ onNavigate }: StoriesProps) {
         {/* Logo */}
         <div className="mt-8 mb-8">
           <button type="button" onClick={() => onNavigate?.('home')} className="w-64 h-48 mx-auto mb-4 cursor-pointer">
-            <img src="/assets/Logo.svg" alt="Taeguk Logo" className="w-full h-full object-contain" />
+            <img src="/assets/logo2.svg" alt="Taeguk Logo" className="w-full h-full object-contain" />
           </button>
         </div>
 
@@ -416,7 +416,7 @@ export default function Stories({ onNavigate }: StoriesProps) {
             </div>
 
             <div className="w-[253px] h-[179px]">
-              <img src="/assets/logo footer.svg" alt="Taeguk Logo" className="w-full h-full object-contain" />
+              <img src="/assets/logo2 footer.svg" alt="Taeguk Logo" className="w-full h-full object-contain" />
             </div>
           </div>
         </div>

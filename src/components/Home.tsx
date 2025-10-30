@@ -28,7 +28,7 @@ export default function Home({ onNavigate }: HomeProps) {
         {/* Logo */}
         <div className="mt-8 mb-8">
           <button type="button" onClick={() => onNavigate?.('home')} className="w-64 h-48 mx-auto mb-4 cursor-pointer">
-            <img src="/assets/Logo.svg" alt="Taeguk Logo" className="w-full h-full object-contain" />
+            <img src="/assets/logo2.svg" alt="Taeguk Logo" className="w-full h-full object-contain" />
           </button>
         </div>
 
@@ -76,7 +76,7 @@ export default function Home({ onNavigate }: HomeProps) {
 
         {/* Hero Image */}
         <div className="w-full max-w-[1335px] mx-auto aspect-[16/9]">
-          <img src="/assets/main background.png" alt="Taeguk Interior" className="w-full h-full object-cover rounded-lg" />
+          <img src="/assets/mainBackground3.png" alt="Taeguk Interior" className="w-full h-full object-cover rounded-lg" />
         </div>
       </section>
 
@@ -371,7 +371,7 @@ export default function Home({ onNavigate }: HomeProps) {
             </div>
             
             <div className="w-[253px] h-[179px]">
-              <img src="/assets/logo footer.svg" alt="Taeguk Logo" className="w-full h-full object-contain" />
+              <img src="/assets/logo2 footer.svg" alt="Taeguk Logo" className="w-full h-full object-contain" />
             </div>
           </div>
         </div>
