@@ -2,7 +2,7 @@
 const imgServiceFlowers = "/assets/mainBackground3.png";
 const imgServiceEvents = "/assets/serviceEvents.png";
 const imgServiceEducation = "/assets/serviceEducation.png";
-const imgServiceSpace = "/assets/project1.png";
+const imgServiceSpace = "/assets/mainProject.jpeg";
 const imgCarouselIcon = "/assets/carouse.svg";
 
 import { useLanguage } from '../contexts/LanguageContext';

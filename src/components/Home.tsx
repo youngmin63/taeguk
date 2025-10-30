@@ -71,12 +71,16 @@ export default function Home({ onNavigate }: HomeProps) {
         </nav>
       </section>
 
-      {/* Hero Section (continued) */}
-      <section className="bg-[#3f4026] flex flex-col items-center justify-center px-4 ">
-
-        {/* Hero Image */}
-        <div className="w-full max-w-[1335px] mx-auto aspect-[16/9]">
-          <img src="/assets/mainBackground3.png" alt="Taeguk Interior" className="w-full h-full object-cover rounded-lg" />
+        {/* Project Section */}
+        <section className="relative h-[60vh] md:h-screen flex items-end justify-center pb-16">
+        <img src="/assets/mainProject.jpeg" alt="Project Background" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="relative z-10 text-center text-white">
+          <h2 className={`text-2xl md:text-2xl font-['Cormorant_Upright'] font-semibold mb-4`}>
+            [Project]
+          </h2>
+          <h3 className={`text-xl md:text-4xl font-['Cormorant_Upright'] font-semibold`}>
+            Natural Garden Design
+          </h3>
         </div>
       </section>
 
@@ -162,18 +166,6 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
       </section>
 
-      {/* Project Section */}
-      <section className="relative h-[60vh] md:h-screen flex items-end justify-center pb-16">
-        <img src="/assets/project1.png" alt="Project Background" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="relative z-10 text-center text-white">
-          <h2 className={`text-2xl md:text-2xl ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-4`}>
-            [Project]
-          </h2>
-          <h3 className={`text-xl md:text-4xl ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold`}>
-            Natural Garden Design
-          </h3>
-        </div>
-      </section>
 
       {/* Stories Section */}
       <section id="stories" className="bg-[#fef9ec] py-40 px-4">
