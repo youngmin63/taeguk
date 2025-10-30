@@ -233,10 +233,10 @@ export default function About({ onNavigate }: AboutProps) {
             </div>
             
             <div className="text-[#fef9ec] font-['Cormorant_Upright'] font-semibold text-lg md:text-xl">
-              <p>{t('footer.about')}</p>
-              <p>{t('footer.work')}</p>
-              <p>{t('footer.stories')}</p>
-              <p>{t('footer.contacts')}</p>
+              <button type="button" onClick={() => onNavigate?.('about')} className="block text-left hover:opacity-80 cursor-pointer">{t('footer.about')}</button>
+              <button type="button" onClick={() => onNavigate?.('services')} className="block text-left hover:opacity-80 cursor-pointer">{t('footer.work')}</button>
+              <button type="button" onClick={() => onNavigate?.('stories')} className="block text-left hover:opacity-80 cursor-pointer">{t('footer.stories')}</button>
+              <button type="button" onClick={() => onNavigate?.('contacts')} className="block text-left hover:opacity-80 cursor-pointer">{t('footer.contacts')}</button>
             </div>
             
             <div className="w-[253px] h-[179px]">
