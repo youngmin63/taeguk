@@ -354,7 +354,7 @@ export default function Home({ onNavigate }: HomeProps) {
           </div>
           
           {/* Bottom Section */}
-          <div className="flex flex-col md:flex-row justify-between items-start gap-8">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-8 mt-40">
             <div className="text-[#FEF3DA] font-['Cormorant_Upright'] font-semibold text-lg md:text-xl">
               <p>{t('footer.location')}</p>
               <p>{t('footer.phone')}</p>
@@ -369,7 +369,7 @@ export default function Home({ onNavigate }: HomeProps) {
             </div>
             
             <div className="w-[253px] h-[179px]">
-              <img src="/assets/logo2 footer.svg" alt="Taeguk Logo" className="w-full h-full object-contain" />
+              <img src="/assets/logoFooter.svg" alt="Taeguk Logo" className="w-full h-full object-contain" />
             </div>
           </div>
         </div>
