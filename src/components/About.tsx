@@ -5,7 +5,6 @@ const imgTeamSecond = "/assets/ourteamSecond.png";
 const imgCarouselIcon = "/assets/carouse.svg";
 
 import { useLanguage } from '../contexts/LanguageContext';
-import LanguageToggle from './LanguageToggle';
 
 interface AboutProps {
   onNavigate?: (page: string) => void;
@@ -16,7 +15,6 @@ export default function About({ onNavigate }: AboutProps) {
   
   return (
     <div className="relative w-full" data-name="About1">
-      <LanguageToggle />
       {/* Hero Section */}
       <section className="bg-[#3f4026] min-h-[40vh] flex flex-col items-center justify-center px-4">
         {/* Logo */}
@@ -225,11 +223,12 @@ export default function About({ onNavigate }: AboutProps) {
           </div>
           
           {/* Bottom Section */}
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-8 mt-40">
             <div className="text-[#FEF3DA] font-['Cormorant_Upright'] font-semibold text-lg md:text-xl">
               <p>{t('footer.location')}</p>
               <p>{t('footer.phone')}</p>
               <p>{t('footer.email')}</p>
+             
             </div>
             
             <div className="text-[#FEF3DA] font-['Cormorant_Upright'] font-semibold text-lg md:text-xl">
@@ -238,9 +237,10 @@ export default function About({ onNavigate }: AboutProps) {
               <button type="button" onClick={() => onNavigate?.('stories')} className="block text-left hover:opacity-80 cursor-pointer">{t('footer.stories')}</button>
               <button type="button" onClick={() => onNavigate?.('contacts')} className="block text-left hover:opacity-80 cursor-pointer">{t('footer.contacts')}</button>
             </div>
+         
             
             <div className="w-[253px] h-[179px]">
-              <img src="/assets/logo2 footer.svg" alt="Taeguk Logo" className="w-full h-full object-contain" />
+              <img src="/assets/logoFooter.svg" alt="Taeguk Logo" className="w-full h-full object-contain" />
             </div>
           </div>
         </div>

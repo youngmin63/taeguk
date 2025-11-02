@@ -5,6 +5,7 @@ import About from './components/About.tsx'
 import Services from './components/Services.tsx'
 import Stories from './components/Stories.tsx'
 import Contacts from './components/Contacts.tsx'
+import LanguageToggle from './components/LanguageToggle.tsx'
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home')
@@ -34,6 +35,7 @@ function App() {
   return (
     <LanguageProvider>
       <div className="App">
+        <LanguageToggle />
         {renderPage()}
       </div>
     </LanguageProvider>

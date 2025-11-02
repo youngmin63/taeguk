@@ -6,7 +6,6 @@ const imgServiceSpace = "/assets/mainProject.jpeg";
 const imgCarouselIcon = "/assets/carouse.svg";
 
 import { useLanguage } from '../contexts/LanguageContext';
-import LanguageToggle from './LanguageToggle';
 
 interface ServicesProps {
   onNavigate?: (page: string) => void;
@@ -17,7 +16,6 @@ export default function Services({ onNavigate }: ServicesProps) {
   
   return (
     <div className="relative w-full min-h-screen">
-      <LanguageToggle />
       {/* Header Section */}
       <section className="bg-[#3f4026] min-h-[40vh] flex flex-col items-center justify-center px-4">
         {/* Logo */}
@@ -219,7 +217,7 @@ export default function Services({ onNavigate }: ServicesProps) {
           </div>
           
           {/* Bottom Section */}
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-8">
             <div className="text-[#FEF3DA] font-['Cormorant_Upright'] font-semibold text-lg md:text-xl">
               <p>{t('footer.location')}</p>
               <p>{t('footer.phone')}</p>

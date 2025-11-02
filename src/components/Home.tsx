@@ -12,7 +12,6 @@ const imgCarouselIcon = "/assets/carouse.svg";
 const imgAboutPhoto = "/assets/aboutPhoto.png";
 
 import { useLanguage } from '../contexts/LanguageContext';
-import LanguageToggle from './LanguageToggle';
 
 interface HomeProps {
   onNavigate?: (page: string) => void;
@@ -23,7 +22,6 @@ export default function Home({ onNavigate }: HomeProps) {
   
   return (
     <div className="w-full">
-      <LanguageToggle />
       {/* Hero Section */}
       <section className="bg-[#3f4026] min-h-[40vh] flex flex-col items-center justify-center px-4">
         {/* Logo */}
@@ -356,7 +354,7 @@ export default function Home({ onNavigate }: HomeProps) {
           </div>
           
           {/* Bottom Section */}
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-8">
             <div className="text-[#FEF3DA] font-['Cormorant_Upright'] font-semibold text-lg md:text-xl">
               <p>{t('footer.location')}</p>
               <p>{t('footer.phone')}</p>

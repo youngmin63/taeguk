@@ -1,5 +1,5 @@
 // 이미지 상수들
-const imgContactsImage = "/assets/contact2.jpg";
+const imgContactsImage = "/assets/contact3.png";
 const imgInsta1 = "/assets/instaImage1.png";
 const imgInsta2 = "/assets/instaImage2.png";
 const imgInsta3 = "/assets/instaImage3.png";
@@ -9,7 +9,6 @@ const imgInsta6 = "/assets/instaImage6.png";
 const imgCarouselIcon = "/assets/carouse.svg";
 
 import { useLanguage } from '../contexts/LanguageContext';
-import LanguageToggle from './LanguageToggle';
 
 interface ContactsProps {
   onNavigate?: (page: string) => void;
@@ -20,7 +19,6 @@ export default function Contacts({ onNavigate }: ContactsProps) {
   
   return (
     <div className="min-h-screen bg-[#FEF3DA]">
-      <LanguageToggle />
       {/* Header Section */}
       <section className="bg-[#3f4026] min-h-[40vh] flex flex-col items-center justify-center px-4">
         {/* Logo */}
@@ -183,7 +181,7 @@ export default function Contacts({ onNavigate }: ContactsProps) {
           </div>
 
           {/* Bottom Section */}
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-8">
             <div className="text-[#FEF3DA] font-['Cormorant_Upright'] font-semibold text-lg md:text-xl">
               <p>{t('footer.location')}</p>
               <p>{t('footer.phone')}</p>
