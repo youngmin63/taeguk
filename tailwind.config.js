@@ -12,7 +12,7 @@ module.exports = {
       },
       colors: {
         'taeguk-brown': '#3f4026',
-        'taeguk-cream': '#fef9ec',
+        'taeguk-cream': '#FEF3DA',
       }
     },
   },

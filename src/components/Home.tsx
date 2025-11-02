@@ -9,6 +9,7 @@ const imgLeaf = "/assets/Leaf.png";
 const imgTree = "/assets/Tree.png";
 const imgBasket = "/assets/Basket.png";
 const imgCarouselIcon = "/assets/carouse.svg";
+const imgAboutPhoto = "/assets/aboutPhoto.png";
 
 import { useLanguage } from '../contexts/LanguageContext';
 import LanguageToggle from './LanguageToggle';
@@ -34,7 +35,7 @@ export default function Home({ onNavigate }: HomeProps) {
 
         {/* Navigation */}
         <nav className="mb-16 flex justify-center">
-          <ul className="flex flex-wrap justify-center gap-4 text-[#fef9ec] text-xl md:text-2xl font-['Cormorant_Upright'] font-semibold w-full max-w-[808px]">
+          <ul className="flex flex-wrap justify-center gap-16 text-[#FEF3DA] text-xl md:text-2xl font-['Cormorant_Upright'] font-semibold w-full max-w-[808px]">
             <li>
               <button 
                 onClick={() => onNavigate?.('about')} 
@@ -88,7 +89,7 @@ export default function Home({ onNavigate }: HomeProps) {
       <section className="bg-[#3f4026] py-40 px-4">
         <div className="max-w-8xl mx-auto">
           {/* Main Title */}
-          <h2 className={`text-[#fef9ec] text-3xl md:text-5xl lg:text-6xl ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-center mb-12`}>
+          <h2 className={`text-[#FEF3DA] text-3xl md:text-5xl lg:text-6xl ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-center mb-12`}>
             {t('home.hero.title')}
           </h2>
 
@@ -98,10 +99,10 @@ export default function Home({ onNavigate }: HomeProps) {
               <div className="w-8 h-8 mb-4">
                 <img src={imgRose} alt="Rose" className="w-full h-full" />
               </div>
-              <h3 className={`text-[#fef9ec] text-[18px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-3 whitespace-nowrap`}>
+              <h3 className={`text-[#FEF3DA] text-[18px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-3 whitespace-nowrap`}>
                 {t('home.services.seasonal')}
               </h3>
-              <p className={`text-[#fef9ec] text-[14px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} opacity-90`}>
+              <p className={`text-[#FEF3DA] text-[14px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} opacity-90`}>
                 {t('home.services.seasonal.desc')}
               </p>
             </div>
@@ -110,10 +111,10 @@ export default function Home({ onNavigate }: HomeProps) {
               <div className="w-8 h-8 mb-4">
                 <img src={imgLeaf} alt="Leaf" className="w-full h-full" />
               </div>
-              <h3 className={`text-[#fef9ec] text-[18px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-3 whitespace-nowrap`}>
+              <h3 className={`text-[#FEF3DA] text-[18px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-3 whitespace-nowrap`}>
                 {t('home.services.interior')}
               </h3>
-              <p className={`text-[#fef9ec] text-[14px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} opacity-90`}>
+              <p className={`text-[#FEF3DA] text-[14px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} opacity-90`}>
                 {t('home.services.interior.desc')}
               </p>
             </div>
@@ -122,10 +123,10 @@ export default function Home({ onNavigate }: HomeProps) {
               <div className="w-8 h-8 mb-4">
                 <img src={imgTree} alt="Tree" className="w-full h-full" />
               </div>
-              <h3 className={`text-[#fef9ec] text-[18px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-3 whitespace-nowrap`}>
+              <h3 className={`text-[#FEF3DA] text-[18px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-3 whitespace-nowrap`}>
                 {t('home.services.garden')}
               </h3>
-              <p className={`text-[#fef9ec] text-[14px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} opacity-90`}>
+              <p className={`text-[#FEF3DA] text-[14px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} opacity-90`}>
                 {t('home.services.garden.desc')}
               </p>
             </div>
@@ -134,10 +135,10 @@ export default function Home({ onNavigate }: HomeProps) {
               <div className="w-8 h-8 mb-4">
                 <img src={imgBasket} alt="Basket" className="w-full h-full" />
               </div>
-              <h3 className={`text-[#fef9ec] text-[18px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-3 whitespace-nowrap`}>
+              <h3 className={`text-[#FEF3DA] text-[18px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-3 whitespace-nowrap`}>
                 {t('home.services.event')}
               </h3>
-              <p className={`text-[#fef9ec] text-[14px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} opacity-90`}>
+              <p className={`text-[#FEF3DA] text-[14px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} opacity-90`}>
                 {t('home.services.event.desc')}
               </p>
             </div>
@@ -146,10 +147,10 @@ export default function Home({ onNavigate }: HomeProps) {
               <div className="w-8 h-8 mb-4">
                 <img src="/assets/Chat Bubble.png" alt="Consulting" className="w-full h-full" />
               </div>
-              <h3 className={`text-[#fef9ec] text-[18px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-3 whitespace-nowrap`}>
+              <h3 className={`text-[#FEF3DA] text-[18px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-3 whitespace-nowrap`}>
                 {t('home.services.consulting')}
               </h3>
-              <p className={`text-[#fef9ec] text-[14px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} opacity-90`}>
+              <p className={`text-[#FEF3DA] text-[14px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} opacity-90`}>
                 {t('home.services.consulting.desc')}
               </p>
             </div>
@@ -158,7 +159,7 @@ export default function Home({ onNavigate }: HomeProps) {
           <div className="mt-10 flex justify-center">
             <button
               onClick={() => onNavigate?.('services')}
-              className={`bg-[#fef9ec] text-[#3f4026] px-6 py-3 ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-lg hover:opacity-80 transition-opacity`}
+              className={`bg-[#FEF3DA] text-[#3f4026] px-6 py-3 ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-lg hover:opacity-80 transition-opacity`}
             >
               {t('home.services.cta')}
             </button>
@@ -168,7 +169,7 @@ export default function Home({ onNavigate }: HomeProps) {
 
 
       {/* Stories Section */}
-      <section id="stories" className="bg-[#fef9ec] py-40 px-4">
+      <section id="stories" className="bg-[#FEF3DA] py-40 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className={`text-[#3f4026] text-4xl md:text-5xl ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-center mb-16`}>
             {t('home.story.title')}
@@ -246,7 +247,7 @@ export default function Home({ onNavigate }: HomeProps) {
       <section id="about" className="relative py-20 px-4">
         <img src={imgFrame61} alt="About Background" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
         <div className="relative z-10 max-w-4xl mx-auto">
-          <div className="bg-[#fef9ec] p-8 md:p-12">
+          <div className="bg-[#FEF3DA] p-8 md:p-12">
             <div className="flex flex-col md:flex-row items-center gap-8">
              
               <div className="flex-1">
@@ -258,10 +259,17 @@ export default function Home({ onNavigate }: HomeProps) {
                   <p className="mb-6">{t('home.about.desc2')}</p>
                   <button
                     onClick={() => onNavigate?.('about')}
-                    className="bg-[#3f4026] text-[#fef9ec] px-6 py-2 font-['Cormorant_Upright'] font-semibold text-lg hover:opacity-80 transition-opacity"
+                    className="bg-[#3f4026] text-[#FEF3DA] px-6 py-2 font-['Cormorant_Upright'] font-semibold text-lg hover:opacity-80 transition-opacity"
                   >
                     {t('home.story.cta')}
                   </button>
+                </div>
+              </div>
+
+              {/* Right: Image Section */}
+              <div className="flex-1 flex justify-end w-full hidden md:flex">
+                <div className="w-full max-w-[288px] h-[288px]">
+                  <img src={imgAboutPhoto} alt="About Photo" className="w-full h-full object-cover rounded-lg" />
                 </div>
               </div>
             </div>
@@ -270,7 +278,7 @@ export default function Home({ onNavigate }: HomeProps) {
       </section>
 
       {/* Reviews Section */}
-      <section className="bg-[#fef9ec] py-40 px-4">
+      <section className="bg-[#FEF3DA] py-40 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className={`text-[#3f4026] text-4xl md:text-5xl ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-center mb-16`}>
             {t('home.reviews.title')}
@@ -312,7 +320,7 @@ export default function Home({ onNavigate }: HomeProps) {
             <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
               {/* Left: Instagram Text */}
               <div className="flex-1">
-                <h2 className="text-[#fef9ec] text-[48px] md:text-[88px] font-['Cormorant_Upright'] font-semibold leading-tight">
+                <h2 className="text-[#FEF3DA] text-[48px] md:text-[88px] font-['Cormorant_Upright'] font-semibold leading-tight">
                   {t('footer.instagram')}
                 </h2>
               </div>
@@ -349,13 +357,13 @@ export default function Home({ onNavigate }: HomeProps) {
           
           {/* Bottom Section */}
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
-            <div className="text-[#fef9ec] font-['Cormorant_Upright'] font-semibold text-lg md:text-xl">
+            <div className="text-[#FEF3DA] font-['Cormorant_Upright'] font-semibold text-lg md:text-xl">
               <p>{t('footer.location')}</p>
               <p>{t('footer.phone')}</p>
               <p>{t('footer.email')}</p>
             </div>
             
-            <div className="text-[#fef9ec] font-['Cormorant_Upright'] font-semibold text-lg md:text-xl">
+            <div className="text-[#FEF3DA] font-['Cormorant_Upright'] font-semibold text-lg md:text-xl">
               <button type="button" onClick={() => onNavigate?.('about')} className="block text-left hover:opacity-80 cursor-pointer">{t('footer.about')}</button>
               <button type="button" onClick={() => onNavigate?.('services')} className="block text-left hover:opacity-80 cursor-pointer">{t('footer.work')}</button>
               <button type="button" onClick={() => onNavigate?.('stories')} className="block text-left hover:opacity-80 cursor-pointer">{t('footer.stories')}</button>

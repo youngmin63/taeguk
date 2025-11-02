@@ -81,7 +81,7 @@ const translations = {
     'about.philosophy.desc4': 'creating calm, joy, and a little magic in everyday life.',
     
     // Stories
-    'stories.title': 'Taeguk\'s Stories',
+    'stories.title': 'Our Stories',
     'stories.story1.title': 'Nandina Planting for Garden Privacy',
     'stories.story1.type': 'Design Type: Natural',
     'stories.story1.services': 'Services: Planting / Privacy Garden',

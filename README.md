@@ -52,7 +52,7 @@ npm run dev
 
 - **컬러 팔레트**: 
   - 메인 브라운: #3f4026
-  - 크림: #fef9ec
+  - 크림: #FEF3DA
 - **타이포그래피**: Cormorant Upright SemiBold
 - **레이아웃**: 반응형 디자인 (현재 데스크톱 최적화)
 

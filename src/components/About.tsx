@@ -28,7 +28,7 @@ export default function About({ onNavigate }: AboutProps) {
         
         {/* Navigation */}
         <nav className="mb-16 flex justify-center">
-          <ul className="flex flex-wrap justify-center gap-4 text-[#fef9ec] text-xl md:text-2xl font-['Cormorant_Upright'] font-semibold w-full max-w-[808px]">
+          <ul className="flex flex-wrap justify-center gap-16 text-[#FEF3DA] text-xl md:text-2xl font-['Cormorant_Upright'] font-semibold w-full max-w-[808px]">
             <li>
               <button 
                 onClick={() => onNavigate?.('about')} 
@@ -69,7 +69,7 @@ export default function About({ onNavigate }: AboutProps) {
       <section className="bg-[#3f4026] min-h-screen flex flex-col items-center justify-center pb-20">
 
         {/* Main Content Section */}
-        <div className="bg-[#fef9ec] w-full min-h-[560px] md:min-h-[720px] lg:min-h-[887px] py-20 overflow-visible">
+        <div className="bg-[#FEF3DA] w-full min-h-[560px] md:min-h-[720px] lg:min-h-[887px] py-20 overflow-visible">
           <div className="max-w-6xl mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
               {/* Left: Text Section */}
@@ -95,11 +95,11 @@ export default function About({ onNavigate }: AboutProps) {
       {/* 소개 텍스트 섹션 */}
       <div className="bg-[#3f4026] min-h-0 md:min-h-[1080px] px-4 py-20">
         <div className="max-w-6xl mx-auto">
-          <p className={`text-[#fef9ec] text-[32px] md:text-[48px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-left mb-16 `}>
+          <p className={`text-[#FEF3DA] text-[32px] md:text-[48px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-left mb-16 `}>
             {t('about.greeting')}
           </p>
           
-          <div className={`text-[#fef9ec] text-[32px] md:text-[48px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-left mb-32`}>
+          <div className={`text-[#FEF3DA] text-[32px] md:text-[48px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-left mb-32`}>
             <p>{t('about.intro1')}</p>
             <p>{t('about.intro2')}</p>
           </div>
@@ -115,7 +115,7 @@ export default function About({ onNavigate }: AboutProps) {
       </div>
 
       {/* 팀 섹션 */}
-      <div className="bg-[#fef9ec] min-h-0 md:min-h-[1080px] px-4 py-20">
+      <div className="bg-[#FEF3DA] min-h-0 md:min-h-[1080px] px-4 py-20">
         <div className="max-w-6xl mx-auto">
           <p className={`text-[#3f4026] text-[48px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold text-center mb-16`}>
             {t('about.team.title')}
@@ -129,7 +129,7 @@ export default function About({ onNavigate }: AboutProps) {
               <div className="w-full aspect-[340/284]">
                 <img alt="Team with dog" className="w-full h-full object-cover" src={imgTeamSecond} />
               </div>
-              <div className={`text-[#3f4026] text-[24px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorapxnt_Upright']"} font-semibold`}>
+              <div className={`text-[#3f4026] text-[24px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold`}>
                 <p>{t('about.team.desc')}</p>
               </div>
             </div>
@@ -166,12 +166,12 @@ export default function About({ onNavigate }: AboutProps) {
       </div>
 
       {/* 철학 섹션 */}
-      <div className="bg-[#3f4026] min-h-0 md:min-h-[1080px] flex items-center justify-center px-4 py-20">
+      <div className="bg-[#3f4026] min-h-0 md:min-h-[550px] flex items-center justify-center px-4 py-20">
         <div className="max-w-4xl mx-auto text-center">
-          <p className={`text-[#fef9ec] text-[48px] md:text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-16`}>
+          <p className={`text-[#FEF3DA] text-[32px] md:text-[64px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold mb-16`}>
             {t('about.philosophy.title')}
           </p>
-          <p className={`text-[#fef9ec] text-[18px] md:text-[24px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold`}>
+          <p className={`text-[#FEF3DA] text-[18px] md:text-[48px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold`}>
             {t('about.philosophy.desc1')}
             <br />
             {t('about.philosophy.desc3')}
@@ -189,7 +189,7 @@ export default function About({ onNavigate }: AboutProps) {
             <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
               {/* Left: Instagram Text */}
               <div className="flex-1">
-                <h2 className="text-[#fef9ec] text-[88px] font-['Cormorant_Upright'] font-semibold leading-tight">
+                <h2 className="text-[#FEF3DA] text-[88px] font-['Cormorant_Upright'] font-semibold leading-tight">
                   {t('footer.instagram')}
                 </h2>
               </div>
@@ -226,13 +226,13 @@ export default function About({ onNavigate }: AboutProps) {
           
           {/* Bottom Section */}
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
-            <div className="text-[#fef9ec] font-['Cormorant_Upright'] font-semibold text-lg md:text-xl">
+            <div className="text-[#FEF3DA] font-['Cormorant_Upright'] font-semibold text-lg md:text-xl">
               <p>{t('footer.location')}</p>
               <p>{t('footer.phone')}</p>
               <p>{t('footer.email')}</p>
             </div>
             
-            <div className="text-[#fef9ec] font-['Cormorant_Upright'] font-semibold text-lg md:text-xl">
+            <div className="text-[#FEF3DA] font-['Cormorant_Upright'] font-semibold text-lg md:text-xl">
               <button type="button" onClick={() => onNavigate?.('about')} className="block text-left hover:opacity-80 cursor-pointer">{t('footer.about')}</button>
               <button type="button" onClick={() => onNavigate?.('services')} className="block text-left hover:opacity-80 cursor-pointer">{t('footer.work')}</button>
               <button type="button" onClick={() => onNavigate?.('stories')} className="block text-left hover:opacity-80 cursor-pointer">{t('footer.stories')}</button>

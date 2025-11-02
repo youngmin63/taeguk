@@ -1,5 +1,5 @@
 // 이미지 상수들
-const imgServiceFlowers = "/assets/mainBackground3.png";
+const imgServiceFlowers = "/assets/servicesFlowers.png";
 const imgServiceEvents = "/assets/serviceEvents.png";
 const imgServiceEducation = "/assets/serviceEducation.png";
 const imgServiceSpace = "/assets/mainProject.jpeg";
@@ -29,7 +29,7 @@ export default function Services({ onNavigate }: ServicesProps) {
 
         {/* Navigation */}
         <nav className="mb-16 flex justify-center">
-          <ul className="flex flex-wrap justify-center gap-4 text-[#fef9ec] text-xl md:text-2xl font-['Cormorant_Upright'] font-semibold w-full max-w-[808px]">
+          <ul className="flex flex-wrap justify-center gap-16 text-[#FEF3DA] text-xl md:text-2xl font-['Cormorant_Upright'] font-semibold w-full max-w-[808px]">
             <li>
               <button
                 onClick={() => onNavigate?.('about')}
@@ -73,7 +73,7 @@ export default function Services({ onNavigate }: ServicesProps) {
         <div className="w-full h-[320px] md:h-[487px] bg-cover bg-center bg-no-repeat relative" style={{backgroundImage: "url('/assets/service background pic.jpg')"}}>
           <div className="max-w-6xl mx-auto px-4 h-full relative">
             <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-center">
-              <div className="flex justify-center items-center w-full max-w-[980px] px-6 py-8 md:px-[64px] md:py-[32px] bg-[#FEF9EC]">
+              <div className="flex justify-center items-center w-full max-w-[980px] px-6 py-8 md:px-[64px] md:py-[32px] bg-[#FEF3DA]">
                 <h1 className={`text-[#3f4026] text-3xl md:text-6xl lg:text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold leading-normal text-center`}>
                   {t('services.title')}
                 </h1>
@@ -92,7 +92,7 @@ export default function Services({ onNavigate }: ServicesProps) {
               <div className="w-full max-w-[643px] aspect-[643/478] ">
                 <img src={imgServiceSpace} alt="Space Styling" className="w-full h-full object-cover rounded-lg" />
               </div>
-              <div className="bg-[#fef9ec] p-8 w-full max-w-[632px] ml-0 md:ml-[40px] ">
+              <div className="bg-[#FEF3DA] p-8 w-full max-w-[632px] ml-0 md:ml-[40px] ">
                 <div className={`text-black text-[20px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold leading-relaxed`}>
                   <p className="mb-4">{t('services.space.desc1')}</p>
                   <p className="mb-4">{t('services.space.desc2')}</p>
@@ -104,7 +104,7 @@ export default function Services({ onNavigate }: ServicesProps) {
             
             {/* Right: Title */}
             <div className="flex-1 order-1 md:order-2">
-              <h2 className={`text-[#fef9ec] text-4xl md:text-6xl lg:text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-bold uppercase leading-tight mt-8 md:mt-8`}>
+              <h2 className={`text-[#FEF3DA] text-4xl md:text-6xl lg:text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-bold uppercase leading-tight mt-8 md:mt-8`}>
                 {t('services.space.title')}
               </h2>
             </div>
@@ -118,7 +118,7 @@ export default function Services({ onNavigate }: ServicesProps) {
           <div className="flex flex-col md:flex-row items-start gap-24">
             {/* Left: Title */}
             <div className="flex-1">
-              <h2 className={`text-[#fef9ec] text-4xl md:text-6xl lg:text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-bold uppercase leading-tight mt-8 md:mt-8 text-right`}>
+              <h2 className={`text-[#FEF3DA] text-4xl md:text-6xl lg:text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-bold uppercase leading-tight mt-8 md:mt-8 text-right`}>
                 {t('services.flowers.title')}
               </h2>
             </div>
@@ -128,7 +128,7 @@ export default function Services({ onNavigate }: ServicesProps) {
               <div className="w-full max-w-[643px] aspect-[643/478]">
                 <img src={imgServiceFlowers} alt="Flowers and Plants" className="w-full h-full object-cover rounded-lg" />
               </div>
-              <div className="bg-[#fef9ec] p-8 w-full max-w-[632px] md:-ml-[40px]">
+              <div className="bg-[#FEF3DA] p-8 w-full max-w-[632px] md:-ml-[40px]">
                 <div className={`text-black text-[20px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold leading-relaxed`}>
                   <p className="mb-4">{t('services.flowers.desc1')}</p>
                   <p className="mb-4">{t('services.flowers.desc2')}</p>
@@ -146,7 +146,7 @@ export default function Services({ onNavigate }: ServicesProps) {
           <div className="flex flex-col gap-8">
             {/* Top: Title */}
             <div className="flex justify-center">
-              <h2 className={`text-[#fef9ec] text-4xl md:text-6xl lg:text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-bold uppercase leading-tight mb-8 text-center`}>
+              <h2 className={`text-[#FEF3DA] text-4xl md:text-6xl lg:text-[80px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-bold uppercase leading-tight mb-8 text-center`}>
                 {t('services.events.title')}
               </h2>
             </div>
@@ -163,7 +163,7 @@ export default function Services({ onNavigate }: ServicesProps) {
             
             {/* Bottom: Centered Description */}
             <div className="flex justify-center">
-              <div className="bg-[#fef9ec] p-8 w-full max-w-[908px]">
+              <div className="bg-[#FEF3DA] p-8 w-full max-w-[908px]">
                 <div className={`text-black text-[20px] ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold leading-relaxed`}>
                   <p className="mb-4">{t('services.events.desc1')}</p>
                   <p className="mb-4">{t('services.events.desc2')}</p>
@@ -183,7 +183,7 @@ export default function Services({ onNavigate }: ServicesProps) {
             <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
               {/* Left: Instagram Text */}
               <div className="flex-1">
-                <h2 className="text-[#fef9ec] text-[88px] font-['Cormorant_Upright'] font-semibold leading-tight">
+                <h2 className="text-[#FEF3DA] text-[88px] font-['Cormorant_Upright'] font-semibold leading-tight">
                   {t('footer.instagram')}
                 </h2>
               </div>
@@ -220,13 +220,13 @@ export default function Services({ onNavigate }: ServicesProps) {
           
           {/* Bottom Section */}
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
-            <div className="text-[#fef9ec] font-['Cormorant_Upright'] font-semibold text-lg md:text-xl">
+            <div className="text-[#FEF3DA] font-['Cormorant_Upright'] font-semibold text-lg md:text-xl">
               <p>{t('footer.location')}</p>
               <p>{t('footer.phone')}</p>
               <p>{t('footer.email')}</p>
             </div>
             
-            <div className="text-[#fef9ec] font-['Cormorant_Upright'] font-semibold text-lg md:text-xl">
+            <div className="text-[#FEF3DA] font-['Cormorant_Upright'] font-semibold text-lg md:text-xl">
               <button type="button" onClick={() => onNavigate?.('about')} className="block text-left hover:opacity-80 cursor-pointer">{t('footer.about')}</button>
               <button type="button" onClick={() => onNavigate?.('services')} className="block text-left hover:opacity-80 cursor-pointer">{t('footer.work')}</button>
               <button type="button" onClick={() => onNavigate?.('stories')} className="block text-left hover:opacity-80 cursor-pointer">{t('footer.stories')}</button>

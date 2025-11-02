@@ -19,7 +19,7 @@ export default function Contacts({ onNavigate }: ContactsProps) {
   const { t, language } = useLanguage();
   
   return (
-    <div className="min-h-screen bg-[#fef9ec]">
+    <div className="min-h-screen bg-[#FEF3DA]">
       <LanguageToggle />
       {/* Header Section */}
       <section className="bg-[#3f4026] min-h-[40vh] flex flex-col items-center justify-center px-4">
@@ -32,7 +32,7 @@ export default function Contacts({ onNavigate }: ContactsProps) {
 
         {/* Navigation */}
         <nav className="mb-16 flex justify-center">
-          <ul className="flex flex-wrap justify-center gap-4 text-[#fef9ec] text-xl md:text-2xl font-['Cormorant_Upright'] font-semibold w-full max-w-[808px]">
+          <ul className="flex flex-wrap justify-center gap-16 text-[#FEF3DA] text-xl md:text-2xl font-['Cormorant_Upright'] font-semibold w-full max-w-[808px]">
             <li>
               <button
                 onClick={() => onNavigate?.('about')}
@@ -70,7 +70,7 @@ export default function Contacts({ onNavigate }: ContactsProps) {
       </section>
 
       {/* Main Content Section */}
-      <section className="bg-[#fef9ec] w-full py-20">
+      <section className="bg-[#FEF3DA] w-full py-20">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col md:flex-row items-start justify-between gap-12">
             {/* Left: Text and Form Section */}
@@ -123,7 +123,7 @@ export default function Contacts({ onNavigate }: ContactsProps) {
                 </div>
 
                 {/* Send Button */}
-                <button className={`bg-[#3f4026] text-[#fef9ec] text-xl ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold px-8 py-3 hover:opacity-80 transition-opacity`}>
+                <button className={`bg-[#3f4026] text-[#FEF3DA] text-xl ${language === 'ko' ? 'font-notoSansKr' : "font-['Cormorant_Upright']"} font-semibold px-8 py-3 hover:opacity-80 transition-opacity`}>
                   {t('contacts.form.send')}
                 </button>
               </div>
@@ -147,7 +147,7 @@ export default function Contacts({ onNavigate }: ContactsProps) {
             <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
               {/* Left: Instagram Text */}
               <div className="flex-1">
-                <h2 className="text-[#fef9ec] text-[88px] font-['Cormorant_Upright'] font-semibold leading-tight">
+                <h2 className="text-[#FEF3DA] text-[88px] font-['Cormorant_Upright'] font-semibold leading-tight">
                   {t('footer.instagram')}
                 </h2>
               </div>
@@ -184,13 +184,13 @@ export default function Contacts({ onNavigate }: ContactsProps) {
 
           {/* Bottom Section */}
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
-            <div className="text-[#fef9ec] font-['Cormorant_Upright'] font-semibold text-lg md:text-xl">
+            <div className="text-[#FEF3DA] font-['Cormorant_Upright'] font-semibold text-lg md:text-xl">
               <p>{t('footer.location')}</p>
               <p>{t('footer.phone')}</p>
               <p>{t('footer.email')}</p>
             </div>
 
-            <div className="text-[#fef9ec] font-['Cormorant_Upright'] font-semibold text-lg md:text-xl">
+            <div className="text-[#FEF3DA] font-['Cormorant_Upright'] font-semibold text-lg md:text-xl">
               <button type="button" onClick={() => onNavigate?.('about')} className="block text-left hover:opacity-80 cursor-pointer">{t('footer.about')}</button>
               <button type="button" onClick={() => onNavigate?.('services')} className="block text-left hover:opacity-80 cursor-pointer">{t('footer.work')}</button>
               <button type="button" onClick={() => onNavigate?.('stories')} className="block text-left hover:opacity-80 cursor-pointer">{t('footer.stories')}</button>
